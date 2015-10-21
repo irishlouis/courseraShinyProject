@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/Louis/courseraShinyProject/proj/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Shiny Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Shiny Project">
+  <meta name="author" content="Louis Smith">
+  <meta name="generator" content="slidify">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./Shiny Project_files/default.css" media="all">
+  <link rel="stylesheet" href="./Shiny Project_files/phone.css" media="only screen and (max-device-width: 480px)">
+  <link rel="stylesheet" href="./Shiny Project_files/slidify.css">
+  <link rel="stylesheet" href="./Shiny Project_files/tomorrow.css">
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="slides" src="./Shiny Project_files/slides.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="order" src="./Shiny Project_files/order.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide_config" src="./Shiny Project_files/slide_config.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="modernizr.custom.45394" src="./Shiny Project_files/modernizr.custom.45394.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="hammer" src="./Shiny Project_files/hammer.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide-controller" src="./Shiny Project_files/slide-controller.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide-deck" src="./Shiny Project_files/slide-deck.js"></script><!--<base target="_blank">--><base href="." target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="./Shiny Project_files/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" src="./Shiny Project_files/require-1.0.8.min.js">
+  </script>
+  
+  
+
+<link rel="stylesheet" href="./Shiny Project_files/css"></head>
+<body style="opacity: 0" class="loaded">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Shiny Project</h1>
+    <h2>Instructions for use for app</h2>
+    <p>Louis Smith<br>Coursera</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview of App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The purpose of this app is to allow a user to investigate the overall &amp; relative performance of two NASDAQ listed stocks over a user specifed period of time.</p>
+
+<p>Users can see:</p>
+
+<ol>
+<li>interactive time series plot of stock closing price</li>
+<li>the % change in closing price over the selected period for both stocks</li>
+<li>the relative performance of the better performing stock over the weaker</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Inputs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The user selects two stocks (default selection is Google "GOOG" and Apple "AAPL") via drop down menu.</p>
+
+<p>The user next selects the number of days to look back over (default selection is 365 days) via a slider bar.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class far-past" id="id" style="background:;">
+  <hgroup>
+    <h2>Ouputs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app will display the time series plot of the daily stock closing prices for the selected stocks.</p>
+
+<p>Also displayed is the independant % increase / decrease in closing price for both stocks over the period. As well as the relative performance of the better performing stock over the weaker.</p>
+
+<p>The plot is a dygraph - hoovering over the line will display the closing price for both stocks for that date.</p>
+
+<p>If required the use can also zoom in using the bar on the bottom.
+<em>NOTE: the zoom function on the dygrph is for visual inspection - and is not reactive</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class past" id="id" style="background:;">
+  <hgroup>
+    <h2>Package Dependancies</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A number of packages are used in the implementation of this app:</p>
+
+<ul>
+<li>TTR</li>
+<li>dygraph</li>
+<li>dplyr</li>
+<li>lubridate</li>
+<li>xts</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class current" id="id" style="background:;">
+  <hgroup>
+    <h2>Links</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href="https://github.com/irishlouis/courseraShinyProject">github link</a></p>
+
+<p><a href="https://irishlouissmith.shinyapps.io/courseraShinyAppProject">shiny app io link</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class next" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id="io2012-ptoc" style="display:none;">
+    <ul>
+      <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="1" title="Overview of App">
+         1
+      </a>
+    </li>
+    <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="2" title="Inputs">
+         2
+      </a>
+    </li>
+    <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="3" title="Ouputs">
+         3
+      </a>
+    </li>
+    <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="4" title="Package Dependancies">
+         4
+      </a>
+    </li>
+    <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="5" title="Links">
+         5
+      </a>
+    </li>
+    <li>
+      <a href="file:///C:/Users/Louis/courseraShinyProject/proj/index.html#" target="_self" rel="tooltip" data-slide="6" title="NA">
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="./Shiny Project_files/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </body></html>

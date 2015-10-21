@@ -14,15 +14,22 @@ shinyUI(pageWithSidebar(
      sliderInput('n.days', 'Number of days', 365,
               min = 7, max = 1000)
   ),
+  
   mainPanel(
-    dygraphOutput("plot1"),
-    p(),
-    p('Change (%) in Closing Price for Stock 1'),
-    verbatimTextOutput("head1"),
-    ('Change (%) in Closing Price for Stock 2'),
-    verbatimTextOutput("head2") ,
-    ('Relative Performance (%)'),
-    verbatimTextOutput("head3")
+    tabsetPanel(
+      tabPanel("Documentation",includeMarkdown("index.Rmd")),
+    
+     tabPanel("App", 
+       dygraphOutput("plot1"),
+       p(),
+       p('Change (%) in Closing Price for Stock 1'),
+       verbatimTextOutput("head1"),
+       ('Change (%) in Closing Price for Stock 2'),
+       verbatimTextOutput("head2") ,
+       ('Relative Performance (%)'),
+       verbatimTextOutput("head3"))
+    )
   )
-))
+)
+)
 
