@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+mode        : standalone # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
@@ -27,8 +27,6 @@ Users can see:
 The user selects two stocks (default selection is Google "GOOG" and Apple "AAPL") via drop down menu.
 
 The user next selects the number of days to look back over (default selection is 365 days) via a slider bar.
-
---- .class #id 
 
 ## Ouputs
 The app will display the time series plot of the daily stock closing prices for the selected stocks.
@@ -58,6 +56,16 @@ A number of packages are used in the implementation of this app:
 
 [shiny app io link](https://irishlouissmith.shinyapps.io/courseraShinyAppProject)
 
---- .class #id 
 
+
+
+
+
+Date of publication
+```{r}
+require(lubridate)
+today()
+```
+
+---
 
